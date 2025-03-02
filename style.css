@@ -1,0 +1,58 @@
+/* Reset default margins/padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: #121212;  /* Dark background */
+    color: #ffffff;  /* White text */
+    font-family: Arial, sans-serif;
+    text-align: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+a {
+    color: #00bcd4; /* Light blue links */
+    text-decoration: none;
+}
+a:hover {
+    color: #ff9800; /* Orange on hover */
+}
+
+  nav {
+    margin-bottom: 2rem;
+  }
+  
+  nav a {
+    margin-right: 1.5rem;
+    text-decoration: none;
+    color: #333;
+  }
+  
+  section {
+    margin-bottom: 4rem;
+    padding: 2rem 0;
+  }
+  
+  .project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+  }
+  
+  /* Add hover effects and responsive design */
+  @media (max-width: 768px) {
+    body {
+      padding: 1rem;
+    }
+  
+    nav a {
+      display: block;
+      margin: 0.5rem 0;
+    }
+  }
