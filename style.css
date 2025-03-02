@@ -1,16 +1,24 @@
-/* Reset default margins/padding */
+/* Define reusable colors and gradients */
+:root {
+  --primary-color: #6e8efb;       /* Soft blue */
+  --secondary-color: #a777e3;    /* Soft purple */
+  --gradient-bg: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+  --text-dark: #2d2d2d;          /* Dark text for readability */
+  --card-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+/* Reset margins/padding for consistency */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: 'Arial', sans-serif;
-    line-height: 1.6;
-    color: #333;
-    padding: 2rem;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif; /* Default font */
+}
+
+body {
+  line-height: 1.6;
+  color: var(--text-dark);
+  background-color: #ffffff; /* White background */
+}
   
   nav {
     margin-bottom: 2rem;
